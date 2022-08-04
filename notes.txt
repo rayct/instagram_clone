@@ -1,10 +1,23 @@
 Development Languages to learn 2022
-1. Obj-C/Swift
-2. Java/Kotlin
-3. Dart
-4. JavaScript
-7. Python
+  
+*. Go
+*. Python
+*. JavaScript
+*. Java
+*. C++
+*. Rust
+*. TypeScript
+
+*. Kotlin
+*. Swift
+*. Dart
 
 
 Technologies
 Augmented Reality
+
+****************************************
+Opening Apps via the cmd
+
+open -a "Visual Studio Code - Insiders"
+****************************************
