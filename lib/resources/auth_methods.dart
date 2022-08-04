@@ -70,6 +70,8 @@ class AuthMethods {
   }
 
   loginUser({required String email, required String password}) {}
+
+  getUserDetails() {}
 }
 
 //   // logging in user
