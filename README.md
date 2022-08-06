@@ -1,4 +1,4 @@
-# Instagram Clone
+# Instagram Clone - Unfinished Bugs Need Addressing
 
 A completely Responsive Instagram App- Works on Android, iOS & Web! 
 
