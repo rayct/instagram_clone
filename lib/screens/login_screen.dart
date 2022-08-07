@@ -1,4 +1,4 @@
-// import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 // import 'package:instagram_clone/responsive/mobile_screen_layout.dart';
 // import 'package:instagram_clone/responsive/responsive_layout.dart';
@@ -10,21 +10,21 @@
 // import 'package:instagram_clone/resources/auth_methods.dart';
 // import 'package:instagram_clone/utils/utils.dart';
 
-// class LoginScreen extends StatefulWidget {
-//   const LoginScreen({Key? key}) : super(key: key);
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({Key? key}) : super(key: key);
 
-//   @override
-//   _LoginScreenState createState() => _LoginScreenState();
-// }
+  @override
+  _LoginScreenState createState() => _LoginScreenState();
+}
 
-// class _LoginScreenState extends State<LoginScreen> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       body: Text('From Login Screen'),
-//     );
-//   }
-// }
+class _LoginScreenState extends State<LoginScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        // body: Text('From Login Screen'),
+        );
+  }
+}
 
 
 
