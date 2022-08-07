@@ -21,3 +21,22 @@ Opening Apps via the cmd
 
 open -a "Visual Studio Code - Insiders"
 ****************************************
+
+
+*************************************************************
+iOS Solutions
+*************************************************************
+Flutter Podfile and Pods folders not created in ios directory
+go into ios folder
+delete the Podfile.lock file
+rm -rf Pods
+pod cache clean --all
+pod deintegrate
+pod setup
+pod install
+
+You may also want to do
+
+pod repo update
+*************************************************************
+*************************************************************
