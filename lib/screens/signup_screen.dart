@@ -49,11 +49,13 @@ class _SignupScreenState extends State<SignupScreen> {
         username: _usernameController.text,
         bio: _bioController.text,
         file: _image!);
+
     // if string returned is sucess, user has been created
     if (res == "success") {
       setState(() {
         _isLoading = false;
       });
+
       // navigate to the home screen
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
