@@ -27,7 +27,7 @@ class AuthMethods {
     required String bio,
     required Uint8List file,
   }) async {
-    String res = "Some error Occurred";
+    String res = "An error Occurred";
     try {
       if (email.isNotEmpty ||
           password.isNotEmpty ||
@@ -74,7 +74,7 @@ class AuthMethods {
     required String email,
     required String password,
   }) async {
-    String res = "Some error Occurred";
+    String res = "An error Occurred";
     try {
       if (email.isNotEmpty || password.isNotEmpty) {
         // logging in user with email and password
