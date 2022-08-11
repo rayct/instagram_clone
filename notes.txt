@@ -1,4 +1,4 @@
-Development Languages to learn 2022
+Development Languages and Goals 2022
   
 *. Go
 *. Python
@@ -7,10 +7,10 @@ Development Languages to learn 2022
 *. C++
 *. Rust
 *. TypeScript
-
 *. Kotlin
 *. Swift
 *. Dart
+*. Learn VIM/NVIM
 
 
 Technologies

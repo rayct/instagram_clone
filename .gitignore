@@ -4,6 +4,7 @@
 *.pyc
 *.swp
 .DS_Store
+notes.txt
 .atom/
 .buildlog/
 .history
@@ -45,4 +46,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-notes.txt
