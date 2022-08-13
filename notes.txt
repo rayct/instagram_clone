@@ -40,3 +40,5 @@ You may also want to do
 pod repo update
 *************************************************************
 *************************************************************
+
+flutter run -d chrome --web-renderer html
