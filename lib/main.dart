@@ -13,7 +13,7 @@ import 'package:instagram_clone/responsive/mobile_screen_layout.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // initialise app based on platform- web or mobile
+  // initialise app based on platform - web or mobile
   if (kIsWeb) {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
@@ -32,9 +32,6 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
-// class MyApp extends StatelessWidget {
-//   const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
