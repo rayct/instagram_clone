@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:instagram_clone/utils/colors.dart';
+import 'package:instagram_clone/widgets/post_card.dart';
+// import 'package:instagram_clone/utils/global_variable.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
-// import 'package:instagram_clone/utils/colors.dart';
 // import 'package:cloud_firestore/cloud_firestore.dart';
 // import 'package:instagram_clone/widgets/post_card.dart';
 // import 'package:instagram_clone/utils/global_variable.dart';
@@ -10,9 +13,31 @@ class FeedScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: mobileBackgroundColor,
+        centerTitle: false,
+        title: SvgPicture.asset(
+          'lib/assets/ic_instagram.svg',
+          color: primaryColor,
+          height: 32,
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.messenger_outline,
+            ),
+          ),
+        ],
+      ),
+      body: const PostCard(),
+    );
   }
 }
+
+
+
 
 
 
@@ -69,7 +94,7 @@ class FeedScreen extends StatelessWidget {
 //               backgroundColor: mobileBackgroundColor,
 //               centerTitle: false,
 //               title: SvgPicture.asset(
-//                 'assets/ic_instagram.svg',
+//                 'lib/assets/ic_instagram.svg',
 //                 color: primaryColor,
 //                 height: 32,
 //               ),
@@ -108,4 +133,3 @@ class FeedScreen extends StatelessWidget {
 //       ),
 //     );
 //   }
-// }
