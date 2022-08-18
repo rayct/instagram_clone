@@ -82,6 +82,7 @@ class _CommentsScreenState extends State<CommentsScreen> {
           );
         },
       ),
+
       // text input
       bottomNavigationBar: SafeArea(
         child: Container(

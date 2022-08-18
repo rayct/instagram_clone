@@ -42,6 +42,7 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView(
+        // ignore: sort_child_properties_last
         children: homeScreenItems,
         physics: const NeverScrollableScrollPhysics(),
         controller: pageController,

@@ -42,7 +42,6 @@ class ResponsiveLayout extends StatefulWidget {
 }
 
 class _ResponsiveLayoutState extends State<ResponsiveLayout> {
-  
   @override
   void initState() {
     super.initState();
@@ -50,6 +49,7 @@ class _ResponsiveLayoutState extends State<ResponsiveLayout> {
   }
 
   addData() async {
+    // ignore: no_leading_underscores_for_local_identifiers
     UserProvider _userProvider =
         Provider.of<UserProvider>(context, listen: false);
     await _userProvider.refreshUser();

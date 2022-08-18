@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -79,6 +81,7 @@ class _AddPostScreenState extends State<AddPostScreen> {
         setState(() {
           isLoading = false;
         });
+        // ignore: use_build_context_synchronously
         showSnackBar(
           context,
           'Posted!',
@@ -201,78 +204,3 @@ class _AddPostScreenState extends State<AddPostScreen> {
           );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import 'dart:html';
-
-// import 'package:flutter/material.dart';
-// import 'package:instagram_clone/utils/colors.dart';
-// import 'dart:typed_data';
-// import 'package:image_picker/image_picker.dart';
-// import 'package:instagram_clone/providers/user_provider.dart';
-// import 'package:instagram_clone/resources/firestore_methods.dart';
-// import 'package:instagram_clone/utils/colors.dart';
-// import 'package:instagram_clone/utils/utils.dart';
-// import 'package:provider/provider.dart';
-
-// class AddPostScreen extends StatefulWidget {
-//   const AddPostScreen({Key? key}) : super(key: key);
-
-//   @override
-//   _AddPostScreenState createState() => _AddPostScreenState();
-// }
-
-// class _AddPostScreenState extends State<AddPostScreen> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Center(
-//       child: IconButton(
-//         icon: const Icon(Icons.upload),
-//         onPressed: () {},
-//       ),
-//     );
-
-//     return Scaffold(
-//       appBar: AppBar(
-//         backgroundColor: mobileBackgroundColor,
-//         leading: IconButton(
-//           icon: const Icon)Icons.arrow_back),
-//           onPressed: () {},
-//         ),
-//         title: const Text('Post to'),
-//         centerTitle: false,
-//         actions: [
-//           TextButton(onPressed: () {}, child: const Text('Post', style: TextStyle(
-//             color: Colors.blueAccent,
-//             fontWeight: FontWeight.bold,
-//             fontSize 16,
-//           ),
-//           ),
-//           )
-//         ],
-//       ),
-//     );
-// }
-// }

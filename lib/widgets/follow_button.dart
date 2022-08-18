@@ -30,6 +30,7 @@ class FollowButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(5),
           ),
           alignment: Alignment.center,
+          // ignore: sort_child_properties_last
           child: Text(
             text,
             style: TextStyle(

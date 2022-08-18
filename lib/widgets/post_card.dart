@@ -290,29 +290,39 @@ class _PostCardState extends State<PostCard> {
                   ),
                 ),
                 InkWell(
-                  onTap: () {},
                   child: Container(
-                    padding: const EdgeInsets.symmetric(vertical: 4),
-                    // ignore: prefer_const_constructors
+                    // ignore: sort_child_properties_last
                     child: Text(
-                      'View all 200 comments',
-                      style:
-                          const TextStyle(fontSize: 16, color: secondaryColor),
+                      'View all $commentLen comments',
+                      style: const TextStyle(
+                        fontSize: 16,
+                        color: secondaryColor,
+                      ),
+                    ),
+                    padding: const EdgeInsets.symmetric(vertical: 4),
+                  ),
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => CommentsScreen(
+                        postId: widget.snap['postId'].toString(),
+                      ),
                     ),
                   ),
                 ),
                 Container(
-                  padding: const EdgeInsets.symmetric(vertical: 4),
+                  // ignore: sort_child_properties_last
                   child: Text(
-                    DateFormat.yMMMEd().format(
-                      widget.snap['datePublished'].toDate(),
+                    DateFormat.yMMMd()
+                        .format(widget.snap['datePublished'].toDate()),
+                    style: const TextStyle(
+                      color: secondaryColor,
                     ),
-                    style: const TextStyle(fontSize: 16, color: secondaryColor),
                   ),
+                  padding: const EdgeInsets.symmetric(vertical: 4),
                 ),
               ],
             ),
-          ),
+          )
         ],
       ),
     );
