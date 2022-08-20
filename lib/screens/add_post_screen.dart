@@ -13,7 +13,6 @@ class AddPostScreen extends StatefulWidget {
   const AddPostScreen({Key? key}) : super(key: key);
 
   @override
-  // ignore: library_private_types_in_public_api
   _AddPostScreenState createState() => _AddPostScreenState();
 }
 
@@ -81,7 +80,7 @@ class _AddPostScreenState extends State<AddPostScreen> {
         setState(() {
           isLoading = false;
         });
-        // ignore: use_build_context_synchronously
+
         showSnackBar(
           context,
           'Posted!',

@@ -4,21 +4,20 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:instagram_clone/utils/utils.dart';
+import 'package:instagram_clone/utils/colors.dart';
 import 'package:instagram_clone/resources/auth_methods.dart';
-import 'package:instagram_clone/responsive/mobile_screen_layout.dart';
+import 'package:instagram_clone/widgets/text_field_input.dart';
 import 'package:instagram_clone/responsive/responsive_layout.dart';
 import 'package:instagram_clone/responsive/web_screen_layout.dart';
 import 'package:instagram_clone/screens/login_screen.dart';
-import 'package:instagram_clone/utils/colors.dart';
 // import 'package:instagram_clone/utils/global_variable.dart';
-import 'package:instagram_clone/utils/utils.dart';
-import 'package:instagram_clone/widgets/text_field_input.dart';
+import 'package:instagram_clone/responsive/mobile_screen_layout.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({Key? key}) : super(key: key);
 
   @override
-  // ignore: library_private_types_in_public_api
   _SignupScreenState createState() => _SignupScreenState();
 }
 
@@ -60,7 +59,7 @@ class _SignupScreenState extends State<SignupScreen> {
       });
 
       // navigate to the home screen
-      // ignore: use_build_context_synchronously
+
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (context) => const ResponsiveLayout(
@@ -74,7 +73,7 @@ class _SignupScreenState extends State<SignupScreen> {
         _isLoading = false;
       });
       // show the error
-      // ignore: use_build_context_synchronously
+
       showSnackBar(context, res);
     }
   }

@@ -1,4 +1,3 @@
-import 'package:instagram_clone/screens/comments_screen.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -9,11 +8,11 @@ import 'package:instagram_clone/utils/colors.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:instagram_clone/utils/global_variable.dart';
 import 'package:instagram_clone/widgets/like_animation.dart';
+import 'package:instagram_clone/screens/comments_screen.dart';
 import 'package:instagram_clone/providers/user_provider.dart';
 import 'package:instagram_clone/resources/firestore_methods.dart';
 
 class PostCard extends StatefulWidget {
-  // ignore: prefer_typing_uninitialized_variables
   final snap;
   const PostCard({
     Key? key,
@@ -291,7 +290,6 @@ class _PostCardState extends State<PostCard> {
                 ),
                 InkWell(
                   child: Container(
-                    // ignore: sort_child_properties_last
                     child: Text(
                       'View all $commentLen comments',
                       style: const TextStyle(
@@ -310,7 +308,6 @@ class _PostCardState extends State<PostCard> {
                   ),
                 ),
                 Container(
-                  // ignore: sort_child_properties_last
                   child: Text(
                     DateFormat.yMMMd()
                         .format(widget.snap['datePublished'].toDate()),
